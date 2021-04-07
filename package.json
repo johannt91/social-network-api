@@ -11,10 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/johannt91/social-network-api.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johannt91/social-network-api/issues"
   },
-  "homepage": "https://github.com/johannt91/social-network-api#readme"
+  "homepage": "https://github.com/johannt91/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  }
 }
