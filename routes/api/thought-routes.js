@@ -22,7 +22,7 @@ router
 
 // GET, PUT, and DELETE thought by id
 router
-.route('/:userId/:thoughtId')
+.route('/:thoughtId')
 .get(getThoughtById)
 .put(updateThought)
 .delete(deleteThought);
