@@ -38,7 +38,7 @@ const User = model('User', UserSchema);
 
 // get total count of thoughts and reactions
 UserSchema.virtual('thoughtCount').get(function() {
-    return this.thoughts.length;
+    return this.thoughts.reduce((total, thought) => total + thought.reactions.length + 1, 0);
 });
 
-module.exports = User
+module.exports = User;
